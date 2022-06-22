@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>piedra papel o tijeras
+    </title>
+
+    <style>
+        body{
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            margin: 0;
+            background: lightseagreen;
+        }
+        .containerGeneral{
+            display: grid;
+            height: 100vh;
+            width: 100vh;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        .botones{
+            display: flex;
+            width: 100vh;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+            align-items: center;
+            position: initial;
+        }
+        button{
+            width: 150px;
+            height: 150px;
+            background: none;
+            overflow: hidden;
+            border-radius: 8px;
+            background: blue;
+            margin: 24px 0;
+            
+
+        }
+        button:hover{
+           cursor: pointer;
+           background-color: red;
+        }
+        .contador{
+            display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+        }
+        .contador div{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+        }
+        .resultado{
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 10px 25px;
+            background: lightgreen;
+        }
+        h1{
+            color:brown;
+            }
+    </style>
+</head>
+<body>
+    <div class="contador" id="contador">
+       
+
+    </div>
+    <div class="containerGeneral">
+    <div>
+        <h1>¿que quieres?</h1>
+    </div>
+    
+    <div class="botones">
+        <button type="button" id="piedra" onclick="piedraPapelTijeras()"><img src="./piedra-removebg-preview.png" alt="piedra" ></button>
+        <button type="button" id =papel onclick="piedraPapelTijeras()"><img src="./papel-removebg-preview.png" alt="papel"></button> 
+        <button type="button" id="tijeras" onclick="piedraPapelTijeras()"><img src="./tijeras-removebg-preview.png" alt="tijeras"></button>
+    </div>
+    <div>
+
+        <h1 id="resultado" class="resultado"> resultado
+        </h1>
+    </div>
+        <div>
+            <p id="eleccionPc">
+
+            </p>
+        </div>
+
+    </div>
+
+
+    <script src="./piedrapapeltijera.js"></script>
+</body>
+</html>
