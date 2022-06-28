@@ -5,6 +5,9 @@ let conteoUsusario = document.getElementById("conteoUsuario");
 
 
 
+
+
+
 function papel(){
             
             const usuario1 ="papel";
@@ -73,9 +76,7 @@ function papel(){
                 resultadoFinal.innerHTML= "empate";
                 
             }
-            if (resultadoFinal == "ganaste"){
-                return cuenta +1;
-            }
+           
         
             
                        }
@@ -147,9 +148,7 @@ function piedra(){
                 resultadoFinal.innerHTML= "empate";
                 
             }
-            if (resultadoFinal == "ganaste"){
-                return cuenta +1;
-            }
+        
                   
 
                        }
