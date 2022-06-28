@@ -71,6 +71,7 @@
     width: 100%;
         }
         .resultado{
+            
             border: 2px solid red;
             border-radius: 8px;
             padding: 10px 25px;
@@ -78,6 +79,9 @@
         }
         h1{
             color:brown;
+            }
+            #eleccionPc{
+                color: red;
             }
     </style>
 </head>
@@ -88,13 +92,13 @@
     </div>
     <div class="containerGeneral">
     <div>
-        <h1>¿que quieres?</h1>
+        <h1>¿Qué quieres?</h1>
     </div>
     
     <div class="botones">
-        <button type="button" id="piedra" onclick="piedraPapelTijeras()"><img src="./piedra-removebg-preview.png" alt="piedra" ></button>
-        <button type="button" id =papel onclick="piedraPapelTijeras()"><img src="./papel-removebg-preview.png" alt="papel"></button> 
-        <button type="button" id="tijeras" onclick="piedraPapelTijeras()"><img src="./tijeras-removebg-preview.png" alt="tijeras"></button>
+        <button type="button" id="piedra" onclick="piedra()" onreadystatechange="0"><img src="./piedra-removebg-preview.png" alt="piedra" ></button>
+        <button type="button" id =papel onclick="papel()"><img src="./papel-removebg-preview.png" alt="papel"></button> 
+        <button type="button" id="tijeras" onclick="tijeras()"><img src="./tijeras-removebg-preview.png" alt="tijeras"></button>
     </div>
     <div>
 
