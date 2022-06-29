@@ -2,9 +2,11 @@
 let resultadoFinal = document.getElementById("resultado");
 let eleccionPc = document.getElementById("eleccionPc");
 let conteoUsusario = document.getElementById("conteoUsuario");
+let conteoPc = document.getElementById("conteoPc");
 
 
-
+let contadorUsuario = [];
+let contadorPC = [];
 
 
 
@@ -51,32 +53,48 @@ function papel(){
         
             if(usuario1 == "piedra" && computadora() === "tijeras"){
                 resultadoFinal.innerHTML= "GANASTE!!";
+                contadorUsuario.push(1);
                 
                 
             }
             if(usuario1 == "tijeras" && computadora() === "papel"){
                 resultadoFinal.innerHTML= "GANASTE!!";
+                contadorUsuario.push(1);
                 
             }
              if(usuario1 == "papel" && computadora() === "piedra"){
                 resultadoFinal.innerHTML= "GANASTE!!";
-                
+                contadorUsuario.push(1);
             }
             if(usuario1 == "piedra" && computadora() === "papel"){
                 resultadoFinal.innerHTML= "perdiste :(";
+                contadorPC.push(1);
                 
             }
              if(usuario1 == "tijeras" && computadora() === "piedra"){
                  resultadoFinal.innerHTML= "perdiste :(";
+                 contadorPC.push(1);
                 }
                 if(usuario1 == "papel" && computadora() === "tijeras"){
                     resultadoFinal.innerHTML= "perdiste :(";
+                    contadorPC.push(1);
                 }
              if(usuario1 == computadora()){
                 resultadoFinal.innerHTML= "empate";
                 
             }
-           
+            conteoPc.innerHTML = "PC: " + contadorPC.length;
+            conteoUsusario.innerHTML = "Jugador: " + contadorUsuario.length;
+
+            if (contadorPC.length == 10){
+                alert ("tu oponente ganó por "+ (contadorPC.length-contadorUsuario.length)+ " puntos");
+                location.reload();
+             }
+             if (contadorUsuario.length==10){
+                alert ("ganaste por "+ (contadorUsuario.length- contadorPC.length)+ " puntos");
+                location.reload();
+                 
+             }
         
             
                        }
@@ -123,34 +141,47 @@ function piedra(){
         
             if(usuario1 == "piedra" && computadora() === "tijeras"){
                 resultadoFinal.innerHTML= "GANASTE!!";
-                
+                contadorUsuario.push(1);
                 
             }
             if(usuario1 == "tijeras" && computadora() === "papel"){
                 resultadoFinal.innerHTML= "GANASTE!!";
-                
+                contadorUsuario.push(1);
             }
              if(usuario1 == "papel" && computadora() === "piedra"){
                 resultadoFinal.innerHTML= "GANASTE!!";
-                
+                contadorUsuario.push(1);
             }
             if(usuario1 == "piedra" && computadora() === "papel"){
                 resultadoFinal.innerHTML= "perdiste :(";
+                contadorPC.push(1);
                 
             }
              if(usuario1 == "tijeras" && computadora() === "piedra"){
                  resultadoFinal.innerHTML= "perdiste :(";
+                 contadorPC.push(1);
                 }
                 if(usuario1 == "papel" && computadora() === "tijeras"){
                     resultadoFinal.innerHTML= "perdiste :(";
+                    contadorPC.push(1);
                 }
              if(usuario1 == computadora()){
                 resultadoFinal.innerHTML= "empate";
                 
             }
+            conteoPc.innerHTML = "PC: " + contadorPC.length;
+            conteoUsusario.innerHTML = "Jugador: " + contadorUsuario.length;
         
-                  
-
+ 
+            if (contadorPC.length == 10){
+                alert ("tu oponente ganó por "+ (contadorPC.length-contadorUsuario.length)+ " puntos");
+                location.reload();
+             }
+             if (contadorUsuario.length==10){
+                alert ("ganaste por "+ (contadorUsuario.length- contadorPC.length)+ " puntos");
+                location.reload();
+                 
+             }
                        }
 
 function tijeras(){
@@ -195,32 +226,49 @@ function tijeras(){
         
             if(usuario1 == "piedra" && computadora() === "tijeras"){
                 resultadoFinal.innerHTML= "GANASTE!!";
-                
+                contadorUsuario.push(1);
                 
             }
             if(usuario1 == "tijeras" && computadora() === "papel"){
                 resultadoFinal.innerHTML= "GANASTE!!";
-                
+                contadorUsuario.push(1);
             }
              if(usuario1 == "papel" && computadora() === "piedra"){
                 resultadoFinal.innerHTML= "GANASTE!!";
-                
+                contadorUsuario.push(1);
             }
             if(usuario1 == "piedra" && computadora() === "papel"){
                 resultadoFinal.innerHTML= "perdiste :(";
+                contadorPC.push(1);
                 
             }
              if(usuario1 == "tijeras" && computadora() === "piedra"){
                  resultadoFinal.innerHTML= "perdiste :(";
+                 contadorPC.push(1);
                 }
                 if(usuario1 == "papel" && computadora() === "tijeras"){
                     resultadoFinal.innerHTML= "perdiste :(";
+                    contadorPC.push(1);
                 }
              if(usuario1 == computadora()){
                 resultadoFinal.innerHTML= "empate";
                 
             }
+            conteoPc.innerHTML = "PC: " + contadorPC.length;
+            conteoUsusario.innerHTML = "Jugador: " + contadorUsuario.length;
+           
+            if (contadorPC.length == 10){
+                alert ("tu oponente ganó por "+ (contadorPC.length-contadorUsuario.length)+ " puntos");
+                location.reload();
+             }
+             if (contadorUsuario.length==10){
+                alert ("ganaste por "+ (contadorUsuario.length- contadorPC.length)+ " puntos");
+                location.reload();
+                 
+             }
             
                        }
+
+                     
 
     

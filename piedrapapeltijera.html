@@ -15,11 +15,11 @@
             margin: 0;
             background: lightseagreen;
         }
-        .containerGeneral{
+        .containerGeneral {
             display: grid;
             height: 100vh;
             width: 100vh;
-            align-content: center;
+            align-content: space-evenly;
             justify-items: center;
             align-items: center;
             justify-content: center;
@@ -69,6 +69,7 @@
     align-content: center;
     flex-direction: row;
     width: 100%;
+    background-color: black;
         }
         .resultado{
             
@@ -83,14 +84,16 @@
             #eleccionPc{
                 color: red;
             }
+            
     </style>
 </head>
 <body>
-    <div class="contador" id="contador">
-       
-
-    </div>
     <div class="containerGeneral">
+        <div class="contador" id="contador">
+            <h1 id="conteoUsuario">Jugador: 0</h1>
+           <h1 id="conteoPc">PC: 0</h1>
+    
+        </div>
     <div>
         <h1>¿Qué quieres?</h1>
     </div>
