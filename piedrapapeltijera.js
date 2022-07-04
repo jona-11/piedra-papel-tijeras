@@ -17,7 +17,7 @@ function papel(){
             let resultado = computadoraResultado();
             function computadoraResultado(){
                 let resultado;
-                resultado = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+                resultado = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
                 return resultado;
                 //return sirve para devolver un valor a la funcion//
             }
@@ -105,7 +105,7 @@ function piedra(){
             let resultado = computadoraResultado();
             function computadoraResultado(){
                 let resultado;
-                resultado = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+                resultado = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
                 return resultado;
                 //return sirve para devolver un valor a la funcion//
             }
@@ -190,7 +190,7 @@ function tijeras(){
             let resultado = computadoraResultado();
             function computadoraResultado(){
                 let resultado;
-                resultado = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+                resultado = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
                 return resultado;
                 //return sirve para devolver un valor a la funcion//
             }
