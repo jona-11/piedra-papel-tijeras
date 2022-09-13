@@ -27,15 +27,15 @@ function combate (usuario1, pc){
     conteoUsusario.innerHTML = "Jugador: " + contadorUsuario.length;
 
                  
-     if (contadorPC.length == 10){
+    if (contadorPC.length == 10){
          alert ("tu oponente ganó por "+ (contadorPC.length-contadorUsuario.length)+ " puntos");
          location.reload();
-     }
-     if (contadorUsuario.length==10){
+    }
+    if (contadorUsuario.length==10){
          alert ("ganaste por "+ (contadorUsuario.length- contadorPC.length)+ " puntos");
          location.reload();
          
-     }    
+    }    
     
 }
 
